@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/style4.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- font -->
+
+
+
+<!-- font-family: 'Zen Antique Soft', serif; -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Nunito Sans', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+
+
+<!-- font-family: 'Quicksand', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Poppins', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Source Sans Pro', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+
+<!-- font-family: 'Be Vietnam Pro', sans-serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<!-- font-family: 'Poiret One', cursive; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+
+<!-- font-family: 'Bitter', serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
+
+
+<!-- font-family: 'Libre Baskerville', serif; -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<body>
+
+
+
+    
+<div id="menu">
+
+    <nav class="nav">
+            <ul class="navv">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="work.html">WORK</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+    </nav>
+
+    <div class="hamburger_button">
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+    </div>
+
+</div>    
+
+<div id="contents">
+    <div id="section1">
+
+
+        <h1 class="maintitle">
+            <span>f</span>
+            <span>o</span>
+            <span>r</span>
+            <span>&nbsp;</span>
+            <span>t</span>
+            <span>h</span>
+            <span>e</span>
+            <span>&nbsp;</span>
+            <span>c</span>
+            <span>u</span>
+            <span>l</span>
+            <span>t</span>
+            <span>u</span>
+            <span>r</span>
+            <span>e</span>
+            
+          </h1>
+
+          <h1 class="maintitle2">
+            <span>n</span>
+            <span>o</span>
+            <span>t</span>
+            <span>&nbsp;</span>
+            <span>f</span>
+            <span>o</span>
+            <span>r</span>
+            <span>&nbsp;</span>
+            <span>b</span>
+            <span>e</span>
+            <span>n</span>
+            <span>e</span>
+            <span>f</span>
+            <span>i</span>
+            <span>t</span>
+          </h1>
+    </div>
+
+    <script>
+            
+
+            // menu
+                $(function () {
+                    $('.hamburger_button').click(function () {
+                        $(".nav").toggleClass("wow");
+                        if ($(".nav").hasClass("wow")) {
+                            $(".nav").animate({ "left": "0px" }, 500);
+                            $(".menu").text("Close");
+                        } else {
+                            $(".nav").animate({ "left": "-300px" }, 500);
+                            $(".menu").text("Open");
+                        }
+                    });
+                });
+
+                $(".hamburger_button").click(function () {
+                $(this).toggleClass("close");
+            });
+
+    </script>
+
+</body>
+</html>
